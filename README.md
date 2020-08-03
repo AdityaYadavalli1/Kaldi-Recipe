@@ -2,8 +2,7 @@
 
 ## Data Preparation
 
-### Creating data Folder
-#### data/train and data/test Folder
+### data/train and data/test Folder
 Here, we need to have utt2spk, text, wav.scp files.
 - **text**\
 Format of text file:
@@ -23,7 +22,7 @@ Format of wav.scp
 ```
   **Note:** Make sure that you to change this path when shifting your code to server
 
-#### Creating data/local/dict Folder
+### Creating data/local/dict Folder
 Here, we store all the lexicon related files i.e lexicon.txt, nonsilence_phones.txt, optional_silence.txt, silence_phones.txt, extra_questions.txt (this is optional)
 - **lexicon.txt**\
 Format of text file:
@@ -40,3 +39,6 @@ A phone representing silence is entered (usually 'SIL') and any special noise or
 
 - **optional_silence**\
 Just silence phone 'SIL' is entered in this file.
+
+
+From here on, we can use various Kaldi scripts since we have got to a point where everything is formatted in a way Kaldi takes its inputs. So, the script itself will take care from here.  
