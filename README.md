@@ -22,6 +22,12 @@ Format of wav.scp
 ```
   **Note:** Make sure that you to change this path when shifting your code to server
 
+- **spk2gender**\
+Format of spk2gender file:
+```
+<spk_id> <gender>
+```
+
 ### Creating data/local/dict Folder
 Here, we store all the lexicon related files i.e lexicon.txt, nonsilence_phones.txt, optional_silence.txt, silence_phones.txt, extra_questions.txt (this is optional)
 - **lexicon.txt**\
@@ -42,3 +48,21 @@ Just silence phone 'SIL' is entered in this file.
 
 
 From here on, we can use various Kaldi scripts since we have got to a point where everything is formatted in a way Kaldi takes its inputs. So, the script itself will take care from here.  
+
+## Copying from other recipes
+- Copy the `local` folder from voxforge recipe
+- Copy the `conf` folder from any recipe
+
+## Making a symbolic link
+- Make a symbolic link with `steps` folder in wsj recipe
+- Make a symbolic link with `utils` folder in wsj recipe
+
+**NOTE:** Change the path of KALDI_ROOT in `path.sh` to where your Kaldi is installed.
+
+## To Run the HMM-GMM Model
+`./run.sh`\
+**NOTE:** Make sure that you give full permissions to `run.sh`
+
+## To Find the scores of the Model
+`./best_score.sh`\
+You can find the results in `RESULTS` file.
