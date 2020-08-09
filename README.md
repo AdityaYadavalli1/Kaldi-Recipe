@@ -27,7 +27,16 @@ Format of spk2gender file:
 ```
 <spk_id> <gender>
 ```
-
+### Creating data/local Folder
+- **corpus.txt**\
+This is used to train our language model (in this script SRILM with ngram order 1 is used)\
+Format of text file:
+```
+<word1> <word2> ... <wordN>
+<word1> <word2> ... <wordN>
+.
+.
+```
 ### Creating data/local/dict Folder
 Here, we store all the lexicon related files i.e lexicon.txt, nonsilence_phones.txt, optional_silence.txt, silence_phones.txt, extra_questions.txt (this is optional)
 - **lexicon.txt**\
