@@ -65,10 +65,19 @@ From here on, we can use various Kaldi scripts since we have got to a point wher
 
 **NOTE:** Change the path of KALDI_ROOT in `path.sh` to where your Kaldi is installed.
 
-## To Run the HMM-GMM Model
+## To Run HMM-GMM Model
 `./run.sh`\
 **NOTE:** Make sure that you give full permissions to `run.sh`
 
-## To Find the scores of the Model
+## To Find the Scores of the Model
 `./best_score.sh`\
 You can find the results in `RESULTS` file.
+
+## To Run HMM-TDNN Model [This should be done in addition to HMM-GMM Model]
+- change run_tdnn from 0 to 1 in `run.sh`
+- copy minilibrispeech local folder and place it in the current folder.
+- Remove the file `local/chain/run_tdnn.sh` and copy `run_tdnn.sh` and paste it in `local/chain` folder. I have made minute changes so that it fits my directory structure etc.
+- `./run.sh`
+
+## To Find the results of This Model
+- `cd exp/chain/tdnn1h_sp/decode_test && cat wer_* | ../../../../utils/best_wer.sh`
