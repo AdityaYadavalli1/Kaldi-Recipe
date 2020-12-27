@@ -22,7 +22,7 @@ Format of wav.scp
 ```
   **Note:** Make sure that you to change this path when shifting your code to server
 
-- **spk2gender**\
+- **spk2gender** [optional file]\
 Format of spk2gender file:
 ```
 <spk_id> <gender>
