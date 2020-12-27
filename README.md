@@ -11,7 +11,7 @@ Format of text file:
 ```  
 - **utt2spk**\
 Format of utt2spk file:
-For small datasets we can directly mark `spk_id` as `utt_id`
+For datasets without `spk_id`, we can directly mark `spk_id` as `utt_id`
 ```
 <utt_id> <spk_id>
 ```
