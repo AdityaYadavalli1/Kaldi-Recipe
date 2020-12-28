@@ -43,6 +43,8 @@ Format of text file:
 ```  
 To make this file, first extract all the unique words and then run a g2p model on those words. This could be Sequitr or CMUdict. For a small dataset like this you can directly use the `word` itself instead of `<phone1> <phone2> .. <phoneN>`.
 
+**NOTE**: Make sure to enter `!SIL SIL`  and `<UNK> SIL` rows into the lexicon.txt file.  
+
 - **nonsilence_phones.txt**\
 All unique phones in `lexicon.txt` are entered here -each in one line.
 
