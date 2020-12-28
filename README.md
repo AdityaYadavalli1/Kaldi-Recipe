@@ -11,7 +11,7 @@ Format of text file:
 ```  
 - **utt2spk**\
 Format of utt2spk file:
-For small datasets we can directly mark `spk_id` as `utt_id`
+For datasets without `spk_id`, we can directly mark `spk_id` as `utt_id`
 ```
 <utt_id> <spk_id>
 ```
@@ -20,9 +20,9 @@ Format of wav.scp
 ```
 <utt_id> <path_to_audio_file>
 ```
-  **Note:** Make sure that you to change this path when shifting your code to server
+  **Note:** Make sure that you change this path when shifting your code to server
 
-- **spk2gender**\
+- **spk2gender** [optional file]\
 Format of spk2gender file:
 ```
 <spk_id> <gender>
