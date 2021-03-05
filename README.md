@@ -75,7 +75,7 @@ From here on, we can use various Kaldi scripts since we have got to a point wher
 `./best_score.sh`\
 You can find the results in `RESULTS` file.
 
-## To Run HMM-TDNN Model
+## To Run TDNN Model
 **NOTE:** This should be done in addition to HMM-GMM Model
 - change `run_tdnn` variable from 0 to 1 in `run.sh`
 - copy minilibrispeech local folder and place it in the current folder.
