@@ -29,7 +29,7 @@ Format of spk2gender file:
 ```
 ### Creating data/local Folder
 - **corpus.txt**\
-This is used to train our language model (in this script SRILM with ngram order 1 is used)\
+This is used to train our language model (in this script SRILM with ngram order 3 is used)\
 Format of text file:
 ```
 <word1> <word2> ... <wordN>
